@@ -1,5 +1,5 @@
 <?php  
-
+//this is the connect
 class Men{ 
     public $name = "Rakib";
     public $age = "29";
