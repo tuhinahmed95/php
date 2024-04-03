@@ -1,5 +1,6 @@
 <?php
 //Step 2:
+//this is the from
 require_once("student_class.php");
 
 if(isset($_POST["btnSubmit"])){
