@@ -1,5 +1,7 @@
 
 <?php
+
+//this is my second database connnect
 $db = new mysqli('localhost','root','','company2');
 if (isset($_POST['btnSubmit'])){
     
