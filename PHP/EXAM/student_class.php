@@ -1,5 +1,6 @@
 <?php
 //Step 1:
+//this is a class student
 class Student{   
    private $id;
    private $name; 
