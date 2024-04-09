@@ -20,10 +20,15 @@
 *** select from table name.col name
     from first table name left/right JOIN second table name ON first table name.col name = second table name.col name;
 
-//use of union and union all statement
+//use of union/union all statement
 ---syntax---
 *** select col name 
     from first table name 
-    UNION
+    UNION/UNION ALL
     select col name 
     from second table name;
+
+//use of view statement 
+---syntax---
+*** create view view name AS SELECT 
+    col name FROM table name ;
