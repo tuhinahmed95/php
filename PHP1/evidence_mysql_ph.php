@@ -1,6 +1,6 @@
 
 <?php
-//this is evidance 
+
 
 $db = new mysqli('localhost','root','','company2');
 if (isset($_POST['btnSubmit'])){
