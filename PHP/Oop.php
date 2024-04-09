@@ -1,4 +1,5 @@
 <?php  
+//this is oop
 
 class Men{ 
     public $name = "Rakib";
