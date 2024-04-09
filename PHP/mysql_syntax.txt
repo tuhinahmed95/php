@@ -9,3 +9,13 @@
    ---syntax---
 *** SELECT TABLE NAME.COL NAME
     FROM 2 TABLE NAME WHERE FIRST TABLE NAME.COL NAME = SECOND TABLE NAME.SAME COL NAME;
+
+//inner join use for two table joinning
+---syntax---
+*** select tbale name.col name 
+    from first table name INNER JOIN second table name ON first table name.col name = second table name.col name;
+
+//left/right join 
+---syntax---
+*** select from table name.col name
+    from first table name left/right JOIN second table name ON first table name.col name = second table name.col name;
