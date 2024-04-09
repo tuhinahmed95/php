@@ -32,3 +32,15 @@
 ---syntax---
 *** create view view name AS SELECT 
     col name FROM table name ;
+
+//use of update statement
+---syntax---
+*** UPDATE table name 
+    SET update name = ""
+    WHERE conditon name = conditon name ect;
+
+//use of date statement 
+---syntax---
+*** SELECT CURDATE();
+    SELECT CURTIME();
+    SELECT NOW();
