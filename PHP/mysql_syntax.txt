@@ -19,3 +19,11 @@
 ---syntax---
 *** select from table name.col name
     from first table name left/right JOIN second table name ON first table name.col name = second table name.col name;
+
+//use of union and union all statement
+---syntax---
+*** select col name 
+    from first table name 
+    UNION
+    select col name 
+    from second table name;
