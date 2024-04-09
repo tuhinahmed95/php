@@ -1,4 +1,5 @@
 <?php 
+//this is view
 $conn = mysqli_connect('localhost','root','','madam');
 if (isset($_GET['deleteid'])){ 
     $deleteid = $_GET['deleteid'];
