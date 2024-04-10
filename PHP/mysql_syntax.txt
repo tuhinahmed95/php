@@ -47,5 +47,10 @@
     SELECT ADDDATE('2024-510',INTERVAL 5 MONTH); //adddate + kore ||
     SELECT SUBDATE('2024-510',INTERVAL 5 MONTH); // subdate - kore ||
     SELECT MAKEDATE(2024-202); // use for make date ||
+    SELECT DAYNAME('2024-04-10'); //find out day name ||
+    SELECT MONTHNAME('2024-04-10'); //find out month name ||
+    SELECT YEARNAME('2024-04-10'); //find out year name ||
+
+
 
     
