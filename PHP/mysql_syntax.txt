@@ -44,7 +44,8 @@
 *** SELECT CURDATE();
     SELECT CURTIME();
     SELECT NOW();
-    SELECT ADDDATE('2024-510',INTERVAL 5 MONTH); //adddate + kore 
-    SELECT SUBDATE('2024-510',INTERVAL 5 MONTH); // subdate - kore
+    SELECT ADDDATE('2024-510',INTERVAL 5 MONTH); //adddate + kore ||
+    SELECT SUBDATE('2024-510',INTERVAL 5 MONTH); // subdate - kore ||
+    SELECT MAKEDATE(2024-202); // use for make date ||
 
     
