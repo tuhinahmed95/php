@@ -1,4 +1,4 @@
-
+//this is my first php project
 <?php
 
 require_once("connect.php");
