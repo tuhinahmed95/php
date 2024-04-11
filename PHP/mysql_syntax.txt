@@ -11,6 +11,14 @@
 ---syntax--- ||
 *** update table name set coll name = update data where || example :-- update teacher set salary  = 30000 where id = xxxx; 
 
+// delete statement er babohar ||
+---syntax---  ||
+*** delete from table name where id = xxxx; || example :-- delete from teacher where id = xxx;
+
+// additional data update || 
+---syntax---  ||
+*** update table name set col name = col name + addition data where condition || example = -- update teacher set salary = salary + 5000 where salary > 10000;
+
 
 //USE OF TRUNCATE USE FOR DELETE FOR DATA ||
  ---SYNTAX---  ||
