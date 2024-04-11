@@ -19,6 +19,21 @@
 ---syntax---  ||
 *** update table name set col name = col name + addition data where condition || example = -- update teacher set salary = salary + 5000 where salary > 10000;
 
+// upper and lower function er babohar ||
+---syntax---  ||
+*** select upper('i am tuhin'); || sob gulo word capital hoye jabe .  example :-- select upper(city) from teacher;
+    select lower('I AM TUHIN'); || sob gulo word small hoye jabe .    example :-- select lower(city) from teacher;
+
+// concat function er babohar ||
+---syntax---  ||
+*** select concat('hey','i am','tuhin');  || example :-- select concat (col name,col name,"xxx",col name); NB: AS use kore colum er name change kore dekha jabe ||
+
+// GRETEST and LEAST function er babohar  ||
+---syntax---  ||
+*** select GREATES(10,30,6,30);  ||  NB:-- GREATEST function sob ceye boro number ti output dibe .  ||
+    select LEAST(10,30,6,30);  ||  NB:-- LEAST function sob ceye choto number ti output dibe .  ||
+
+
 
 //USE OF TRUNCATE USE FOR DELETE FOR DATA ||
  ---SYNTAX---  ||
