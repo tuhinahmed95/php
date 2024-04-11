@@ -1,4 +1,11 @@
+//database and table create
+---syntax---
+*** create database database name;
+    create table table name(id int primary key auto_increment, name varchar(),salary double(),);
 
+// data insert
+---syntax---
+***insert into table name (colum name = id, name, salary,)values(data = 01,Tuhin,30,500);
 
 
 //USE OF TRUNCATE USE FOR DELETE FOR DATA
