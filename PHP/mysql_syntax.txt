@@ -54,6 +54,49 @@
 ---syntax--- ||
 *** SELECT EXP(3);  || output = 20.08553XXXX  ||
 
+// kono table er sompurno colum information neyar jonno DESCRIBE statement babohar kora hy  ||
+---syntax---
+*** DESCRIBE table name;
+
+
+
+
+|| GROUP FUNCTION ER BABOHAR ||   GROUP FUNCTION NAME = (AVG, COUNT, MAX, MIN, SUM)  ||
+
+
+// COUNT function er babohar   ||
+---syntax---   ||
+*** SELECT COUNT(*) FROM table name;   output = table er sobgulo row count korbe  ||
+
+
+// MAX function er babohar   ||
+---syntax---   ||
+*** SELECT MAX(col name) FROM table name;   output = colum er sobceye boro number dekhabe  ||
+
+// MIN function er babohar   ||
+---syntax---   ||
+*** SELECT MIN(col name) FROM table name;   output = colum er sobceye choto number dekhabe  ||
+
+
+// SUM function er babohar   ||
+---syntax---   ||
+*** SELECT SUM(col name) FROM table name;   output = colum er sobgulo row er sum dekhbe  ||
+
+
+||  ALTER STATEMENT ER BABOHAR   ||
+
+
+// TABLE add korar niyom   ||
+---syntax---  ||
+*** ALTER TABLE table name 
+ADD col name datatype;   ||
+
+//COL change korar niyom  ||
+---syntax---   ||
+*** ALTER TABLE table name 
+CHANGE old col name new col name (datatype);
+
+
 
 
 //USE OF TRUNCATE USE FOR DELETE FOR DATA ||
