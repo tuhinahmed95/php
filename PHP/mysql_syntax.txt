@@ -94,14 +94,35 @@ ADD col name datatype;   ||
 //COL change korar niyom  ||
 ---syntax---   ||
 *** ALTER TABLE table name 
-CHANGE old col name new col name (datatype);
+CHANGE old col name new col name (datatype);   ||
+
+// COLUM delete korar niyom   ||
+---syntax---   ||
+** ALTER TABLE table name 
+DROP COLUMN col name;   ||
+
+
+||  UPDATE STATEMENT ER BABOHAR   ||
+
+//data UPDATE korar niyom   ||
+---syntax---    ||
+*** UPDATE table name 
+SET col name = "data"
+where id = xxxx;   ||
+
+
+||   CREATING GROUPS OF DATA and GROUP BY CLAUSE SYTAX  ||
+
+//GROUPS BY er babohar   ||
+---syntax---  ||
+*** SELECT col name SUM(col name) FROM table name GROUP BY col name ORDER BY SUM(col name) DESC;  NB:-- ORDER BY use korar jonno desending vabe dekhabe  ||
 
 
 
 
 //USE OF TRUNCATE USE FOR DELETE FOR DATA ||
  ---SYNTAX---  ||
-*** TRUNCATE TABLE NAME;  ||
+*** TRUNCATE TABLE table name;  ||   NB:---sobgulo row er data delete hoye jabe  ||
 
 //joining two tables  ||
    ---syntax--- ||
