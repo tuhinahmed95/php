@@ -33,6 +33,27 @@
 *** select GREATES(10,30,6,30);  ||  NB:-- GREATEST function sob ceye boro number ti output dibe .  ||
     select LEAST(10,30,6,30);  ||  NB:-- LEAST function sob ceye choto number ti output dibe .  ||
 
+//POW function er babohar  ||
+---syntax--- ||
+*** SELECT POW(2,3);  || output (2,3) = 8   ||
+
+//LOG function er babohar  ||
+---syntax--- ||
+*** SELECT LOG(2);  || output (2) = 0.693147XXXX   ||
+
+
+// TRUNCATE function er babohar  ||
+---syntax--- ||
+*** SELECT TRUNCATE(20.3897655,2);  || output (20.3897655,2) = .por 2 ta word nibe   || NB :-- SELECT TRUNCATE(LOG(2),2); output = .por 2 ta word nibe  ||
+
+//RAND function er babohar  ||
+---syntax--- ||
+*** SELECT RAND();  || output = random number dibe  ||
+
+//EXP function er babohar  ||
+---syntax--- ||
+*** SELECT EXP(3);  || output = 20.08553XXXX  ||
+
 
 
 //USE OF TRUNCATE USE FOR DELETE FOR DATA ||
