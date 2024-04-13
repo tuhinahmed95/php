@@ -1,5 +1,5 @@
     <?php
-    //this is the connect proces to database
+    
     $conn = new mysqli('localhost','root','','company');
 
     if(isset($_POST['btn'])){ 
