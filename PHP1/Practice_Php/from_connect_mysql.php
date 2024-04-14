@@ -9,7 +9,7 @@
 ?>
 
 
-//
+// this is a practice from in php
 
 
 
