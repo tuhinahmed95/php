@@ -1,22 +1,24 @@
 <?php
-   if(isset($_POST['btn'])){ 
-    $name = $_POST['name'];
-    $address = $_POST['address'];
-    $email = $_POST['email'];
-    $gender = $_POST['select'];
+   if(isset($_GET['btn'])){ 
+    $name = $_GET['name'];
+    $address = $_GET['address'];
+    $email = $_GET['email'];
+    $gender = $_GET['select'];
    }
+
+   
 
 ?>
 
 
-// this is a practice from in php
+
 
 
 
 
 <head> 
     <body>
-        <form action="#" method="post" border="1"> 
+        <form action="#" method="GET" border="1"> 
             <label for="name"> Full Name
                 <input type="text" name="name">
             </label><br><br>
