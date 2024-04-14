@@ -1,10 +1,15 @@
 <?php
-   if(isset($_POST['']))
+   if(isset($_POST['btn'])){ 
+    $name = $_POST['name'];
+    $address = $_POST['address'];
+    $email = $_POST['email'];
+    $gender = $_POST['select'];
+   }
 
 ?>
 
 
-
+//
 
 
 
