@@ -1,5 +1,5 @@
 <?php 
-//this is oop class 
+
 require_once("Oop_class.php");
 
 if(isset($_POST["btn"])){ 
