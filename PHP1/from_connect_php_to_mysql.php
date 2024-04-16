@@ -1,10 +1,10 @@
 <?php
 
-    $conn = new mysqli('localhost','','root','information');
+    $conn = mysqli_connect("localhost","","root","information");
     if(isset($_POST['btn'])){ 
         $name = $_POST['name'];
         $email = $_POST['email'];
-        
+        $conn ->query("Call personal_information('$name','$email')");
     }
 
 ?>
