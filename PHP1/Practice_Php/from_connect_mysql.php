@@ -10,7 +10,7 @@
 
 ?>
 
-//this is a practice 
+
 
 <head> 
     <body>
