@@ -1,0 +1,175 @@
+//database and table create ||
+---syntax---  ||
+*** create database database name;
+    create table table name(id int primary key auto_increment, name varchar(),salary double(),); ||
+
+// data insert  ||
+---syntax---  ||
+***insert into table name (colum name = id, name, salary,)values(data = 01,Tuhin,30,500); NB:- NOT NULL dile data khali rakha jabe na || ||
+
+// update statement er babohar  ||
+---syntax--- ||
+*** update table name set coll name = update data where || example :-- update teacher set salary  = 30000 where id = xxxx; 
+
+// delete statement er babohar ||
+---syntax---  ||
+*** delete from table name where id = xxxx; || example :-- delete from teacher where id = xxx;
+
+// additional data update || 
+---syntax---  ||
+*** update table name set col name = col name + addition data where condition || example = -- update teacher set salary = salary + 5000 where salary > 10000;
+
+// upper and lower function er babohar ||
+---syntax---  ||
+*** select upper('i am tuhin'); || sob gulo word capital hoye jabe .  example :-- select upper(city) from teacher;
+    select lower('I AM TUHIN'); || sob gulo word small hoye jabe .    example :-- select lower(city) from teacher;
+
+// concat function er babohar ||
+---syntax---  ||
+*** select concat('hey','i am','tuhin');  || example :-- select concat (col name,col name,"xxx",col name); NB: AS use kore colum er name change kore dekha jabe ||
+
+// GRETEST and LEAST function er babohar  ||
+---syntax---  ||
+*** select GREATES(10,30,6,30);  ||  NB:-- GREATEST function sob ceye boro number ti output dibe .  ||
+    select LEAST(10,30,6,30);  ||  NB:-- LEAST function sob ceye choto number ti output dibe .  ||
+
+//POW function er babohar  ||
+---syntax--- ||
+*** SELECT POW(2,3);  || output (2,3) = 8   ||
+
+//LOG function er babohar  ||
+---syntax--- ||
+*** SELECT LOG(2);  || output (2) = 0.693147XXXX   ||
+
+
+// TRUNCATE function er babohar  ||
+---syntax--- ||
+*** SELECT TRUNCATE(20.3897655,2);  || output (20.3897655,2) = .por 2 ta word nibe   || NB :-- SELECT TRUNCATE(LOG(2),2); output = .por 2 ta word nibe  ||
+
+//RAND function er babohar  ||
+---syntax--- ||
+*** SELECT RAND();  || output = random number dibe  ||
+
+//EXP function er babohar  ||
+---syntax--- ||
+*** SELECT EXP(3);  || output = 20.08553XXXX  ||
+
+// kono table er sompurno colum information neyar jonno DESCRIBE statement babohar kora hy  ||
+---syntax---
+*** DESCRIBE table name;
+
+
+
+
+|| GROUP FUNCTION ER BABOHAR ||   GROUP FUNCTION NAME = (AVG, COUNT, MAX, MIN, SUM)  ||
+
+
+// COUNT function er babohar   ||
+---syntax---   ||
+*** SELECT COUNT(*) FROM table name;   output = table er sobgulo row count korbe  ||
+
+
+// MAX function er babohar   ||
+---syntax---   ||
+*** SELECT MAX(col name) FROM table name;   output = colum er sobceye boro number dekhabe  ||
+
+// MIN function er babohar   ||
+---syntax---   ||
+*** SELECT MIN(col name) FROM table name;   output = colum er sobceye choto number dekhabe  ||
+
+
+// SUM function er babohar   ||
+---syntax---   ||
+*** SELECT SUM(col name) FROM table name;   output = colum er sobgulo row er sum dekhbe  ||
+
+
+||  ALTER STATEMENT ER BABOHAR   ||
+
+
+// TABLE add korar niyom   ||
+---syntax---  ||
+*** ALTER TABLE table name 
+ADD col name datatype;   ||
+
+//COL change korar niyom  ||
+---syntax---   ||
+*** ALTER TABLE table name 
+CHANGE old col name new col name (datatype);   ||
+
+// COLUM delete korar niyom   ||
+---syntax---   ||
+** ALTER TABLE table name 
+DROP COLUMN col name;   ||
+
+
+||  UPDATE STATEMENT ER BABOHAR   ||
+
+//data UPDATE korar niyom   ||
+---syntax---    ||
+*** UPDATE table name 
+SET col name = "data"
+where id = xxxx;   ||
+
+
+||   CREATING GROUPS OF DATA and GROUP BY CLAUSE SYTAX  ||
+
+//GROUPS BY er babohar   ||
+---syntax---  ||
+*** SELECT col name SUM(col name) FROM table name GROUP BY col name ORDER BY SUM(col name) DESC;  NB:-- ORDER BY use korar jonno desending vabe dekhabe  ||
+
+
+
+
+//USE OF TRUNCATE USE FOR DELETE FOR DATA ||
+ ---SYNTAX---  ||
+*** TRUNCATE TABLE table name;  ||   NB:---sobgulo row er data delete hoye jabe  ||
+
+//joining two tables  ||
+   ---syntax--- ||
+*** SELECT TABLE NAME.COL NAME  ||
+    FROM 2 TABLE NAME WHERE FIRST TABLE NAME.COL NAME = SECOND TABLE NAME.SAME COL NAME;  ||
+
+//inner join use for two table joinning  ||
+---syntax---  ||
+*** select tbale name.col name   ||
+    from first table name INNER JOIN second table name ON first table name.col name = second table name.col name;  ||
+
+//left/right join   ||
+---syntax---  ||
+*** select from table name.col name  ||
+    from first table name left/right JOIN second table name ON first table name.col name = second table name.col name;  ||
+
+//use of union/union all statement  ||
+---syntax---  ||
+*** select col name   ||
+    from first table name   ||
+    UNION/UNION ALL  ||
+    select col name  ||
+    from second table name;  ||
+
+//use of view statement   ||
+---syntax---  ||
+*** create view view name AS SELECT   ||
+    col name FROM table name ;  ||
+
+//use of update statement  ||
+---syntax---  ||
+*** UPDATE table name   ||
+    SET update name = ""  ||
+    WHERE conditon name = conditon name ect;  ||
+
+//use of date statement  ||
+---syntax---  ||
+*** SELECT CURDATE();  ||
+    SELECT CURTIME();  ||
+    SELECT NOW();
+    SELECT ADDDATE('2024-510',INTERVAL 5 MONTH); //adddate + kore  ||
+    SELECT SUBDATE('2024-510',INTERVAL 5 MONTH); // subdate - kore  ||
+    SELECT MAKEDATE(2024-202); // use for make date  ||
+    SELECT DAYNAME('2024-04-10'); //find out day name  ||
+    SELECT MONTHNAME('2024-04-10'); //find out month name  ||
+    SELECT YEARNAME('2024-04-10'); //find out year name  ||
+
+
+
+    

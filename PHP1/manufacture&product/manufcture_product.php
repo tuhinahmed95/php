@@ -1,4 +1,5 @@
     <?php
+    //thsi is connect php to mysql
     $conn = new mysqli('localhost','root','','company');
 
     if(isset($_POST['btn'])){ 
