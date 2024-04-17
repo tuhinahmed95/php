@@ -12,7 +12,7 @@ if(isset($_POST['btn'])){
 
     if($query == true){ 
         echo "data inserted succesfully";
-        header("loction:form.php");
+        header("location:form.php");
     }
     else { 
         echo "data not inserted";
@@ -32,7 +32,7 @@ if(isset($_POST['btn'])){
     <title>Crud</title>
 </head>
 <body>
-    <form action="#" method="POST"> 
+    <form action="form.php" method="POST"> 
         <label for="id">ID 
             <input type="number" name="id" placeholder="enter your id no">
         </label><br><br>
