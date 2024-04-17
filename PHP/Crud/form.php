@@ -1,9 +1,22 @@
 <?php
-$connectDb = mysqli_connect("localhos","","root","Crud");
+$connectDb = mysqli_connect("localhost","root","","crud");
 if(isset($_POST['btn'])){ 
     $id = $_POST['id'];
     $name = $_POST['name'];
     $email = $_POST['email'];
+
+    $datainsert = "INSERT INTO personal_information 
+                  VALUES ('$id','$name','$email')";
+
+    $query = mysqli_query($connectDb,$datainsert);
+
+    if($query == true){ 
+        echo "data inserted succesfully";
+        header("loction:form.php");
+    }
+    else { 
+        echo "data not inserted";
+    }
 }
 
 
