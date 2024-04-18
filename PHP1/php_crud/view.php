@@ -1,5 +1,5 @@
 <?php
-$connectwithDB = mysqli_connect('localhost','root','','crud');
+$connectwithDB = mysqli_connect('localhost','root','','information');
 
 ?>
 <!DOCTYPE html>
@@ -11,7 +11,7 @@ $connectwithDB = mysqli_connect('localhost','root','','crud');
 </head>
 <body>
     <?php
-        $datashow = "SELECT * FROM information";
+        $datashow = "SELECT * FROM personal_information";
         $query = mysqli_query($connectwithDB,$datashow);
 
         echo "<table style='border:1px solid black'>";
@@ -27,6 +27,7 @@ $connectwithDB = mysqli_connect('localhost','root','','crud');
                 <td> $email</td>
               <tr>";
         }
+       
     ?>
 </body>
 </html>

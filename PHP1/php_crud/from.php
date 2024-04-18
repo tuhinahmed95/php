@@ -1,10 +1,10 @@
 <?php
-$connectwithDB = mysqli_connect('localhost','root','','crud');
+$connectwithDB = mysqli_connect('localhost','root','','information');
 if(isset($_POST["btnsubmit"])){
     $name = $_POST["name"];
     $email = $_POST["email"];
 
-    $insertdata = "INSERT INTO information(Full_Name,Email)
+    $insertdata = "INSERT INTO personal_information(Full_Name,Email)
                     VALUES ('$name','$email')";
 
     $query = mysqli_query($connectwithDB,$insertdata);
@@ -27,7 +27,7 @@ if(isset($_POST["btnsubmit"])){
     <title>Form</title>
 </head>
 <body>
-    <form action="crud.php" method="post">
+    <form action="view.php" method="post">
         <label for="name">Name</label><br>
         <input type="text" id="name" name="name"><br><br>
         <label for="email">E-mail</label><br>
