@@ -1,4 +1,4 @@
-//this is a project
+
 <?php
 
 require_once("connect.php");
