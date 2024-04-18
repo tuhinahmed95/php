@@ -1,6 +1,6 @@
 
 <?php 
-$conn = mysqli_connect('localhost','root','','crud-one');
+$conn = mysqli_connect('localhost','root','','crud_one');
 if (isset($_POST['submit'])){ 
     $name = $_POST['name'];
     $age = $_POST['age'];

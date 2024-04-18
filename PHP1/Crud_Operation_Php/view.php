@@ -1,6 +1,6 @@
 
 <?php 
-$conn = mysqli_connect('localhost','root','','crud-one');
+$conn = mysqli_connect('localhost','root','','crud_one');
 if (isset($_GET['deleteid'])){ 
     $deleteid = $_GET['deleteid'];
 
