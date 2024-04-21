@@ -45,7 +45,7 @@ if (isset($_GET['deleteid'])){
 
             $id = $data['id'];
             $name = $data['name'];
-            $age = $data['age'];
+            $age = $data['age'];    
             $email = $data['email'];
             echo "<tr> 
                     <td>$id</td>
