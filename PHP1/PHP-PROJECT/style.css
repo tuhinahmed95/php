@@ -1,0 +1,118 @@
+.container{ 
+    width: 100%;
+    display: flex;
+}
+.left-side{ 
+    width: 50%;
+    text-align: left;
+}
+.left-side h3{ 
+    padding-left: 10px;
+    
+}
+
+.right-side{ 
+    width: 50%;
+    text-align: right;
+}
+
+.container-fluid{ 
+    width: 100%;
+    display: flex;
+}
+
+.first{ 
+    width: 25%;
+    text-align: center;
+}
+
+
+.second{ 
+    width: 25%;
+    text-align: center;
+}
+
+
+.third{ 
+    width: 25%;
+    text-align: center;
+}
+
+
+.four{ 
+    width: 25%;
+    text-align: center;
+}
+
+.first h4{ 
+    background-color: green;
+    color: white;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+
+.second h4{ 
+    background-color: goldenrod;
+    color: white;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+
+.third h4{ 
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+
+.four h4{ 
+    background-color: navy;
+    color: white;
+    border-radius: 25px;
+    padding: 10px;
+}
+.h2{ 
+    padding-left: 20px;
+    color: red;
+}
+
+.div{ 
+    width: 100%;
+
+}
+
+.div h3{ 
+    text-align: left;
+    padding: 20px;
+    color: red;
+
+}
+
+.status{ 
+    width: 100%;
+    display: flex;
+}
+
+.left{ 
+    width: 50%;
+
+}
+.left h5{ 
+    text-align: left;
+    padding-left: 20px;
+    border-radius: 20px;
+    
+}
+
+.right{ 
+    width: 50%;
+    text-align: right;
+}
+
+.dropdown button { 
+    text-decoration: none;
+    
+}
