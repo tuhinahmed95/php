@@ -1,0 +1,41 @@
+.container{ 
+    width: 100%;
+    display: flex;
+    margin: 0px;
+    background-color: powderblue;
+}
+.logo{ 
+    width: 20%;
+    padding-left: 10px;
+}
+
+.logo img{ 
+    width: 20%;
+    padding-left: 10px;
+}
+
+.main-menu{ 
+    width: 60%;
+    margin-top: 10px;
+
+}
+.main-menu ul a{ 
+    text-decoration: none;
+    padding: 10px;
+}
+.main-menu a:hover{ 
+    background-color: azure;
+    color: dodgerblue;
+}
+
+.end-nav{ 
+    width: 15%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.end-nav input:hover{ 
+    background-color: aliceblue;
+    color: cornflowerblue;
+
+}
