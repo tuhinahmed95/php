@@ -62,9 +62,17 @@
         <input type="text" name="start-date" placeholder="Start Date">
         <input type="text" name="end-date" placeholder="End Date">
         <input type="text" name="select-customer" placeholder="Select Customer"><br><br>
-        <input type="text" name="select-product" placeholder="Select Product"><br><br>
-        <input type="submit" name="filter" value="filter">
-        <input type="reset" name="reset" value="reset">
+
+       <select name="dropdown">
+                <option value="product1">Select Product</option>
+                <option value="product">Product 2</option>
+                <option value="product3">Product 3</option>
+       </select><br><br>
+
+       <div class="button"> 
+        <input type="submit" name="filter" value="Filter">
+        <input type="reset" name="reset" value="Reset">
+       </div>
 
 
     </div>
@@ -73,6 +81,7 @@
     <!-- this is table -->
     <div> 
         <table class="table1"> 
+            <h2>Sale</h2>
             <tr> 
                 <th>Sl No</th>
                 <th>Invoice No</th>
