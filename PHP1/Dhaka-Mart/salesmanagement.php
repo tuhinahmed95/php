@@ -30,6 +30,25 @@
             <h3>0Tk</h3>
         </div>
 
+        <div class="five"> 
+            <h3>Today Profit</h3>
+        </div>
+
+        <div class="six"> 
+            <h3>0Tk</h3>
+        </div>
+
+        <div class="seven"> 
+            <h3>8069451
+                
+                Tk
+            </h3>
+        </div>
+
+        <div class="eight"> 
+            <h3>0Tk</h3>
+        </div>
+
     </div>
 
 </div>
