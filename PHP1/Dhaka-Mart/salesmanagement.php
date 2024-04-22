@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dhaka-Mart</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -49,6 +49,27 @@
             <h3>0Tk</h3>
         </div>
 
+    </div>
+
+    <div class="table"> 
+        <table> 
+            <tr> 
+                <th>Sl No</th>
+                <th>Invoice No</th>
+                <th>Customer</th>
+                <th>Items</th>
+                <th>Date</th>
+                <th>Discount</th>
+                <th>Receivable</th>
+                <th>Paid</th>
+                <th>Product Return</th>
+                <th>Due</th>
+                <th>Purchase Cost</th>
+                <th>Profit</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </table>
     </div>
 
 </div>
