@@ -29,6 +29,20 @@
                 </h4>
             </div>
 
+            <div class="total-delivary"> 
+                <h4>Total Delivary 
+                    <br>
+                    4250
+                </h4>
+            </div>
+
+            <div class="total-customer">
+                <h4>Total Customer 
+                    <br>
+                    5261
+                </h4>
+            </div>
+
 
            </div>
 
