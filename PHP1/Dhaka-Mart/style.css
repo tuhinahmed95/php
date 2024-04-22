@@ -1,0 +1,54 @@
+.container{ 
+    background-color: aquamarine;
+}
+
+.navbar{ 
+    width: 100%;
+    display: flex;
+}
+.first{ 
+     width: 12%;
+     
+}
+.first h3{ 
+    border-radius: 10px;
+    background-color: dodgerblue;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin:0px 0px 0px 5px;
+    
+}
+.second{ 
+    width: 12%;
+
+}
+.second h3{ 
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    margin:0px 0px 0px 5px;
+    text-align: center;
+   
+}
+.third h3{ 
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    padding: 10px;
+    margin:0px 0px 0px 5px;
+    text-align: center;
+}
+.four{ 
+    width: 12%;
+}
+
+.four h3{ 
+    border-radius: 10px;
+    background-color: darkslateblue;
+    color: white;
+    padding: 10px;
+    margin:0px 0px 0px 5px;
+    text-align: center;
+}
