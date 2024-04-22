@@ -1,0 +1,33 @@
+.left-side{ 
+    width: 50%;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.main-body{ 
+    width: 100%;
+    display: flex;
+}
+.total-customer{ 
+    width: 20%;
+    display: flex;
+
+}
+.total-customer h4{ 
+    border-radius: 20px;
+    background-color: cornflowerblue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.visitors{ 
+    width: 20%;
+
+}
+.visitors h4{ 
+   background-color: darkblue;
+   border-radius: 20px;
+   text-align: center;
+   color: white;
+   padding: 10px;
+}
