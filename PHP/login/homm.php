@@ -28,8 +28,10 @@
 
 session_start();
 
-if(!isset($_SESSION['syntax'])){ 
-    header("location:login.php");
+if(!isset($_SESSION['syntax']) ){ 
+    unset($_SESSION['syntax']);
+    session_destroy();
+    header("loction:index.php");
 }
 
 
