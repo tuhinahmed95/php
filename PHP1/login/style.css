@@ -1,0 +1,7 @@
+.container{ 
+    background-image: url("backgroundimage.avif");
+}
+.form{ 
+    width: 40%;
+    background-color: green;
+}
