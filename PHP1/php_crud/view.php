@@ -10,6 +10,7 @@ $connectwithDB = mysqli_connect('localhost','root','','information');
     <title>View</title>
 </head>
 <body>
+    <!-- crud operation -->
     <?php
         $datashow = "SELECT * FROM personal_information";
         $query = mysqli_query($connectwithDB,$datashow);
