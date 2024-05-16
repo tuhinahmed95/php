@@ -28,6 +28,7 @@ $conn = mysqli_connect("localhost","root","","php_db");
                 <th>Firstname</th>
                 <th>Lastname</th>
                 <th>E-Mail</th>
+                <th>Action</th>
 
              </tr>";
 
