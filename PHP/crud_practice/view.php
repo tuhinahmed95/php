@@ -24,15 +24,7 @@ $conn = mysqli_connect("localhost","root","","php_db");
             $sql = "SELECT * FROM student";
             $query = mysqli_query($conn,$sql);
 
-            echo "<table class='table table-success>
-             <tr> 
-                <th>Id</th>
-                <th>Firstname</th>
-                <th>Lastname</th>
-                <th>E-Mail</th>
-                <th>Action</th>
-
-             </tr>";
+            ec
 
                 while($data = mysqli_fetch_assoc($query)){ 
                     $id   = $data['id'];
