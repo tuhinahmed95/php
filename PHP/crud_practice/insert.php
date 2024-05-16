@@ -1,18 +1,21 @@
 
 <?php
-    $conn = mysaqli_connect("localhost","root","","php_db");
+    $conn = mysqli_connect("localhost","root","","php_db");
     if(isset($_POST['submit'])){ 
         $firstName = $_POST['firstname'];
         $lastname  = $_POST['lastname'];
         $email     = $_POST['email'];
+
+
+        $sql = "INSERT INTO product(firstname,lastname,email) VALUES('$firstName','$lastname','$email')";
+        if(mysqli_query($conn,$sql) == TRUE){ 
+            echo "data inserted succesfully";
+        }
+        else{ 
+            echo "data is not inserted";
+        }
     }
-    $sql = "INSERT INTO product(firstname,lastname,email) VALUES('$firstName'$lastname','$email')";
-    if(mysql_query($conn,$sql) == TRUE){ 
-        echo "data inserted succesfully";
-    }
-    else{ 
-        echo "data is not inserted";
-    }
+   
 
 
 ?>
