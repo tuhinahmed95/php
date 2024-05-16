@@ -43,8 +43,9 @@ $conn = mysqli_connect("localhost","root","","php_db");
                     <td>$firstName</td>
                     <td>$lastName</td>
                     <td>$email</td>
-                    </tr>"
-                };
+                    <td><span class='btn btn-success'>Edit</span> <span class='btn btn-danger'>Delete</span></td>
+                    </tr>";
+                }
 
 
             ?>
