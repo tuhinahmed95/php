@@ -22,13 +22,28 @@ $conn = mysqli_connect("localhost","root","","php_db");
             $sql = "SELECT * FROM student";
             $query = mysqli_query($conn,$sql);
 
-            echo "<table class="table table-success>" <tr> 
+            echo "<table class='table table-success>
+             <tr> 
                 <th>Id</th>
                 <th>Firstname</th>
                 <th>Lastname</th>
                 <th>E-Mail</th>
 
-                </tr>"
+             </tr>";
+
+                while($data = mysqli_fetch_assoc($query)){ 
+                    $id   = $data['id'];
+                    $firstName = $data['firstname'];
+                    $lastName  = $data['lastname'];
+                    $email     = $data['email'];
+
+                echo "<tr> 
+                    <td>$id</td>
+                    <td>$firstName</td>
+                    <td>$lastName</td>
+                    <td>$email</td>
+                    </tr>"
+                };
 
 
             ?>
