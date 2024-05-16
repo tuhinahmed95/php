@@ -37,10 +37,11 @@
     <div class="container">
         <div class="row"> 
         <div class="col-sm-3"></div>
-        <div class="col-sm-6 mt-4 pt-4" >
+        <div class="col-sm-6 mt-4 pt-4 border border-success" >
 
         <form action="" method="POST"> 
             <h1>Registration Form</h1>
+            
             Firstname : <br>
             <input type="text" name="firstname"><br><br>
             Lastname : <br>
