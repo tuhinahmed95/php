@@ -39,8 +39,8 @@ if ($_GET['id']){
    <div class="container"> 
     <div class="row"> 
         <div class="col-sm-3"></div>
-        <div class="col-sm-6 pt-4 mt-4 border border-success"> 
-    <form action="<?php echo $_SERVER['PHP_SELF']?>" method="POST"> 
+        <div class="col-sm-6 pt-4 mt-4 border border-success mt-4 p-4"> 
+    <form action="<?php echo $_SERVER['PHP_SELF']?>" method="POST" > 
         Firstname:<br>
         <input type ="text" name ="firstname" value="<?php echo $firstname ?>"><br><br>
         Lastname:<br>
