@@ -1,5 +1,11 @@
 <?php
 $conn  = mysqli_connect("localhost","root","","php_db");
+if($_GET['id']){ 
+    $getid = $_GET['id'];
+    $sql = "SELECT * FROM student WHERE id=$getid";
+    $query = mysqli_query($conn,$sql);
+    $data  = mysqli_fetch_assoc($query);
+}
 
 ?>
 
@@ -19,10 +25,17 @@ $conn  = mysqli_connect("localhost","root","","php_db");
         <div class="row"> 
             <div class="col-sm-3"></div>
             <div class="col-sm-6"> 
-                <form action="<?php echo $_SERVER['PHP_SELF']?> " method="post">
+                <form action="<?php echo $_SERVER['PHP_SELF']?> " method="post" class="border border-success">
 
                 Firstname <br>
                 <input type="text" name="firstname" value="<?php echo $firstname?>"><br><br>
+                Lastname <br>
+                <input type="text" name="lastname" value="<?php echo $lastname ?>"><br> <br>
+                E-Mail <br>
+                <input type="text" name="email" value="<?php echo $email ?>"><br><br>
+                <input type="text" name="id" value="<?php echo $id ?> "hidden><br>
+
+                <input type="submit" name="edit" value="Edit" class="btn btn-success">
 
                 </form>
 
