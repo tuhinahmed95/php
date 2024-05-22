@@ -1,6 +1,15 @@
 
 <?php
     $conn = mysqli_connect("localhost","root","","php_db");
+    if(isset($_GET['deleteid'])){ 
+        $deleteid  = $_GET['deleteid'];
+
+       $sql  =  "DELETE FROM student WHERE id = $deleteid";
+
+       if(mysqli_query($conn,$sql) == TRUE){ 
+        header("location:view.php");
+       }
+    }
    
 ?>
 
@@ -45,8 +54,12 @@
             <td>$firstname</td>
             <td>$lastname</td>
             <td>$email</td>
-            <td><span class='btn btn-success'>Eidt</span> 
-            <span class='btn btn-danger'>Delete</span> 
+            <td><span class='btn btn-success'>
+           <a href='edit.php?id=$id' class='text-decoration-none text-white'> Eidt </a>
+            </span> 
+            <span class='btn btn-danger'>
+           <a href='view.php?deleteid=$id' class='text-decoration-none text-white'> Delete</a>
+            </span> 
             </td>
         
             </tr>";
