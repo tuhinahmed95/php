@@ -1,4 +1,3 @@
-
 <?php
     $conn = mysqli_connect("localhost","root","","php_db");
     
@@ -39,12 +38,13 @@
             <h1>Registration Form</h1>
             
             Firstname : <br>
-            <input type="text" name="firstname"><br><br>
+            <input type="text" name="firstname" value="<?php echo $firstname?>"><br><br>
             Lastname : <br>
-            <input type="text" name="lastname"><br><br>
+            <input type="text" name="lastname" value="<?php echo $lastname?>"><br><br>
             Email : <br>
-            <input type="text" name="email"><br><br>
-            <input type="submit" name="submit" value="Inset" class="btn btn-success">
+            <input type="text" name="email" value="<?php echo $email?>"><br><br>
+            <input type="text" name="id" value="<?php echo $id?>" ><br><br>
+            <input type="submit" name="submit" value="Update" class="btn btn-success">
         </form>
 
         </div>
