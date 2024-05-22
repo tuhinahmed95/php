@@ -31,6 +31,7 @@
         <div class="col-sm-1"></div>
         <div class="col-sm-10 mt-4 pt-4 border border-success" >
             <h3 class='text-center p-2 m-2 bg-success text-white'>User's Information</h3>
+            <h4><a href="insert.php" class='bg-success text-white text-decoration-none text-align-right'>Add Student</a></h4>
         <?php
 
         $sql    = "SELECT * FROM student";

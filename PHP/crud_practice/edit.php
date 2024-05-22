@@ -1,18 +1,20 @@
+
 <?php
     $conn = mysqli_connect("localhost","root","","php_db");
-    
-    if($_GET['id']){ 
-        $getid = $_GET['id'];
+   if($_GET['id']){ 
+    $getId   = $_GET['id'];
 
-       $sql     =  "SELECT * FROM student WHERE id = $getid";
-       $query   = mysqli_query($conn,$sql);
+    $sql      = "SELECT * FROM student WHERE id = $getId";
+    $query    = mysqli_query($conn, $sql);
 
-       $data    = mysqli_fecth_assoc($query);
-       $id         = $data['id'];
-       $firstname  = $data['firstname'];
-       $lastname   = $data['lastname'];
-       $email      = $data['email'];
-    }
+    $data     = mysqli_fetch_assoc($query);
+
+    $id         = $data['id'];
+    $firstName  = $data['firstname'];
+    $lastName   = $data['lastname'];
+    $email      = $data['email'];
+   }
+
 
 ?>
 
@@ -34,17 +36,16 @@
         <div class="col-sm-3"></div>
         <div class="col-sm-6 mt-4 pt-4 border border-success" >
 
-        <form action="inset.php" method="POST"> 
+        <form action="view.php" method="POST"> 
             <h1>Registration Form</h1>
             
             Firstname : <br>
-            <input type="text" name="firstname" value="<?php echo $firstname?>"><br><br>
+            <input type="text" name="firstname"><br><br>
             Lastname : <br>
-            <input type="text" name="lastname" value="<?php echo $lastname?>"><br><br>
+            <input type="text" name="lastname"><br><br>
             Email : <br>
-            <input type="text" name="email" value="<?php echo $email?>"><br><br>
-            <input type="text" name="id" value="<?php echo $id?>" ><br><br>
-            <input type="submit" name="submit" value="Update" class="btn btn-success">
+            <input type="text" name="email"><br><br>
+            <input type="submit" name="submit" value="Inset" class="btn btn-success">
         </form>
 
         </div>
