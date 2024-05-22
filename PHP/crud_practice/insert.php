@@ -39,7 +39,7 @@
         <div class="col-sm-3"></div>
         <div class="col-sm-6 mt-4 pt-4 border border-success" >
 
-        <form action="" method="POST"> 
+        <form action="inset.php" method="POST"> 
             <h1>Registration Form</h1>
             
             Firstname : <br>
