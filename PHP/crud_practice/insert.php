@@ -5,8 +5,13 @@ if(isset($_POST['submit'])){
     $lastname      = $_POST['lastname'];
     $email         = $_POST['email'];
     $sql    = "INSERT INTO student(firstname,lastname,email) VALUES('$firstname','$lastname','$email')";
-    $query  = mysqli_query($conn,$sql);
-    if($query)
+    if(mysqli_query($conn,$sql) == TRUE){ 
+        echo "data inserted succesfully";
+        header("location:insert.php");
+    }
+    else{
+        echo "data is not inserted";
+    }
 }
 
 ?>
@@ -26,14 +31,15 @@ if(isset($_POST['submit'])){
             <div class="col-sm-3"></div>
 
             <div class="col-sm-6 mt-4 pt-4 border border-success"> 
-                <form action="insert.php" method="POST"> 
+                <h3 class="bg-success text-white">Registration Form</h3>
+                <form action="view.php" method="POST"> 
                     Firstname : <br>
                     <input type="text" name="firstname"><br><br>
                     Lastname : <br>
                     <input type="text" name="lastname"><br><br>
                     Email : <br>
                     <input type="text" name="email"><br><br>
-                    <input type="submit" name="submit" value="submit" class="btn btn-success">
+                    <input type="submit" name="submit" value="Insert" class="btn btn-success">
                 </form>
             </div>
 
