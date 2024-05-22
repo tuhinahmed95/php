@@ -19,8 +19,9 @@ $conn   = mysqli_connect("localhost","root","","php_db");
         <div class="row"> 
             <div class="col-sm-3"></div>
 
-            <div class="col-sm-6 mt-4 pt-4"> 
+            <div class="col-sm-6 mt-4 pt-4 border border-success"> 
                 <a href="insert.php" class='text-decoration-none'>Add Student</a>
+                <h3 class='text-white text-center bg-success'>User's Information</h3>
                <?php 
                $sql    = "SELECT * FROM student";
                $query  = mysqli_query($conn,$sql);
