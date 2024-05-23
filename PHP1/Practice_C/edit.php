@@ -3,7 +3,7 @@ $conn = mysqli_connect("localhost","root","","crud_practice");
 if(isset($_GET['id'])){ 
     $getId   = $_GET['id'];
 
-    $sql   = "SELECT FROM information WHERE id=$getId ";
+    $sql   = "SELECT * FROM information WHERE id=$getId ";
     $query = mysqli_query($conn,$sql);
     $data  = mysqli_fetch_assoc($query);
 
@@ -22,7 +22,7 @@ if(isset($_POST['update'])){
     $sql1     = "UPDATE information SET name = '$name', email = '$email', address = '$address' WHERE id = '$id' ";
 
     if(mysqli_query($conn,$sql1) == TRUE){ 
-        echo "data update";
+        header("location:view.php");
     }else{ 
         echo "not update";
     }
