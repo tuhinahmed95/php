@@ -1,9 +1,9 @@
 <?php
 $conn   = mysqli_connect("localhost","root","","php_db");
-if($_GET['id']){ 
+if(isset($_GET['id'])){ 
     $getId = $_GET['id'];
 
-    $sql     = "SELECT FROM student WHERE id = $getId";
+    $sql     = "SELECT * FROM student WHERE id = $getId";
     $query   = mysqli_query($conn,$sql);
     $data    = mysqli_fetch_assoc($query);
 
@@ -22,7 +22,7 @@ if(isset($_POST['edit'])){
     $sql1      = "UPDATE  student SET firstname = '$firstname', lastname = '$lastname', email = '$email' WHERE id = '$id' ";
 
     if(mysqli_query($conn,$sql1) == TRUE){ 
-        echo "data updated";
+        header("location:view.php");
     }
     else{ 
         echo "data is not update";
