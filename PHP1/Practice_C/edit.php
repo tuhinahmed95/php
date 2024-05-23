@@ -14,11 +14,12 @@ if(isset($_GET['id'])){
 }
 
 if(isset($_POST['update'])){ 
+    $id      = $_POST['id'];
     $name    = $_POST['name'];
     $email   = $_POST['email'];
     $address = $_POST['address'];
 
-    $sql1     = "UPDATE FROM information SET name = '$name', email = '$email', address = '$address' WHERE id = $id ";
+    $sql1     = "UPDATE information SET name = '$name', email = '$email', address = '$address' WHERE id = '$id' ";
 
     if(mysqli_query($conn,$sql1) == TRUE){ 
         echo "data update";
