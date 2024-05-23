@@ -28,7 +28,7 @@ if(isset($_GET['deleteid'])){
             <div class="col-sm-1"></div>
 
             <div class="col-sm-10 mt-4 pt-4 border border-success"> 
-                <a href="insert.php" class='text-decoration-none'>Add Student</a>
+               <h3> <a href="insert.php" class='text-decoration-none'>Add Student</a></h3>
                 <h3 class='text-white text-center bg-success mt-4 pt-4'>User's Information</h3>
                <?php 
                $sql    = "SELECT * FROM student";
