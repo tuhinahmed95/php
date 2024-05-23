@@ -1,6 +1,6 @@
 <?php
 $conn = mysqli_connect("localhost","root","","crud_practice");
-if($_GET['id']){ 
+if(isset($_GET['id'])){ 
     $getId   = $_GET['id'];
 
     $sql   = "SELECT FROM information WHERE id=$getId ";
