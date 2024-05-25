@@ -26,7 +26,6 @@ if(isset($_POST['submit'])){
 
 </head>
 <body>
-    <!-- this is a form -->
     <div class="contaniner"> 
         <div class="row"> 
             <div class="col-sm-3"></div>
