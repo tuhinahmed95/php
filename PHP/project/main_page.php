@@ -8,7 +8,7 @@
    
 </head>
 <body>
-//this is my main page
+
      
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
