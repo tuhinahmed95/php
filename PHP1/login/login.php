@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- this is a login page -->
     <div class="container">
     <center> 
         <div class="form">
