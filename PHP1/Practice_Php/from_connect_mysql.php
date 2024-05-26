@@ -13,6 +13,7 @@
 
 <head> 
     <body>
+        <!-- this is connect to form -->
         <form action="#" method="GET" border="1"> 
             <label for="name"> Full Name
                 <input type="text" name="name">
