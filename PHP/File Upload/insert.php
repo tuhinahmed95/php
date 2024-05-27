@@ -1,5 +1,9 @@
 <?php
-
+    $conn = mysqli_connect("localhost","root","","crud_practice");
+    if(isset($_POST('btn')){ 
+        $name    = $_POST['name'];
+        $image   = $_POST['image'];
+    }
 ?>
 
 <!DOCTYPE html>
