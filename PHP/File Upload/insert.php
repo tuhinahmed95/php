@@ -21,6 +21,7 @@
                     <input type="file" name="image"><br><br>
                     Email : <br>
                     <input type="text" name="email"><br><br>
+                    <input type="submit" name="btn" value="Insert">
                 </form>
             </div>
             <div class="col-sm-3"></div>
