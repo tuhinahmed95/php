@@ -3,6 +3,12 @@
     if(isset($_POST('btn')){ 
         $name    = $_POST['name'];
         $image   = $_POST['image'];
+        $email   = $_POST['email'];
+
+        $sql     = "INSERT INTO student(name,image,email)VALUES('$name','$image','$email')";
+        if(mysqli_query($conn,$sql) == TRUE){ 
+            header("location:view.php");
+        }
     }
 ?>
 
