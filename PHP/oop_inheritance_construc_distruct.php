@@ -1,4 +1,4 @@
-//this is oop and inheritance
+
 
 <?php   
 
