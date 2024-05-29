@@ -10,7 +10,6 @@ if(isset($_POST['upload'])){
     $imgDes   = "images/".$imgName;
     move_uploaded_file($imgTmpName,"images/".$imgName);
 
-    mysqli_query($conn, "INSERT INTO practice(name,price,image)VALUES('$name','$price','$imgDes')");
 
 }
 
