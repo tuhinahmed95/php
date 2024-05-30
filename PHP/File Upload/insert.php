@@ -5,11 +5,6 @@ if(isset($_POST['upload'])){
     $price  = $_POST['price'];
     $image  = $_FILES['image'];
     $imgName= $_FILES['image']['name'];
-    $imgTmpName = $_FILES['image']['tmp_name'];
-    $imgDes   = "images/".$imgName;
-    move_uploaded_file($imgTmpName,"images/".$imgName);
-
-
-}
+ 
 
 ?>
