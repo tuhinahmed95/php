@@ -22,7 +22,7 @@
                     <input type="text" name="pname"><br><br>
                     Product Price : <br>
                     <input type="text" name="price"><br><br>
-                    
+                    <button name="btn">Insert</button>
                 </form>
 
             </div>
