@@ -1,5 +1,9 @@
 <?php
     $conn   = mysqli_connect("localhost","root","","db_crud");
+    if(isset($_POST['btn'])){ 
+        $name     = $_POST['name'];
+        $cname    = $_POST['cname'];
+    }
 
 ?>
 
