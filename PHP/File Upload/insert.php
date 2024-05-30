@@ -3,6 +3,14 @@
     if(isset($_POST['btn'])){ 
         $name     = $_POST['name'];
         $cname    = $_POST['cname'];
+        $price    = $_POST['price'];
+
+        $sql      = "SELECT FROM practice(name,cname,price)VALUES('$name','$cname','$price')";
+        if(mysqli_query($conn,$sql) ==TRUE){ 
+            header("location:view.php");
+        }else{ 
+            echo "data is not inserted";
+        }
     }
 
 ?>
