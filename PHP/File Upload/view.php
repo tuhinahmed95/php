@@ -17,14 +17,25 @@
                <?php  
                $sql   = "SELECT * FROM practice";
                $query = mysqli_query($conn,$sql);
-               echo <table>
+               echo "<table>
                         <tr> 
                         <th>ID</th>
                         <th>Product Name</th>
                         <th>Product Category</th>
                         <th>Product Price</th>
                         <th>Action</th>
-                        </tr>
+                        </tr>";
+
+                while($data = mysqli_fetch_assoc($query)){ 
+                    echo "<tr> 
+                            <td>$data[id]</td>
+                            <td>$data[product name]</td>
+                            <td>$data[product category]</td>
+                            <td>$data[product price]</td>
+                        </tr>";
+                }        
+
+                       
                ?>
             </div>
             <div class="col-sm-3"></div>
