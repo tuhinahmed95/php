@@ -19,8 +19,11 @@
                $query = mysqli_query($conn,$sql);
                echo <table>
                         <tr> 
-                        <td>ID</td>
-                        <td>Product Name</td>
+                        <th>ID</th>
+                        <th>Product Name</th>
+                        <th>Product Category</th>
+                        <th>Product Price</th>
+                        <th>Action</th>
                         </tr>
                ?>
             </div>
