@@ -15,7 +15,13 @@
             <div class="col-sm-3"></div>
             <div class="col-sm-6"> 
                <?php  
-               $sql  = "SELECT * FROM "
+               $sql   = "SELECT * FROM practice";
+               $query = mysqli_query($conn,$sql);
+               echo <table>
+                        <tr> 
+                        <td>ID</td>
+                        <td>Product Name</td>
+                        </tr>
                ?>
             </div>
             <div class="col-sm-3"></div>
