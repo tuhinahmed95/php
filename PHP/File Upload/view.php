@@ -27,13 +27,14 @@
                         </tr>";
 
                 while($data = mysqli_fetch_assoc($query)){ 
-                    echo <tr> 
+                    echo "<tr> 
                             <td>$data[id]</td>
                             <td>$data[product name]</td>
                             <td>$data[product category]</td>
                             <td>$data[product price]</td>
                             <td>
-                            <span class='btn btn-success'><a href="edit.php">Edit</a></span> 
+                            <span class='btn btn-success'><a href="edit.php" class='text-decoration-none text-white'>Edit</a></span> 
+                            <span class='btn btn-success'><a href="view.php" class='text-decoration-none text-white'>Delete</a></span> 
                             </td>
                         </tr>";
                 }        
