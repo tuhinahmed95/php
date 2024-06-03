@@ -1,4 +1,10 @@
+<?php
+$conn  = mysqli_connect("localhost","root","","db_practice");
+if(isset($_GET['deleteid'])){ 
+    $deleteid   = $_GET['deleteid'];
+}
 
+?>
 
 
 
