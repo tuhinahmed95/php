@@ -1,6 +1,16 @@
 <?php
 $conn = mysqli_connect('localhost','root','','testdb');
 
+if(isset($_GET['deleteid'])){ 
+    $deleteid = $_GET['deleteid'];
+
+    $sql = "DELETE FROM student WHERE id= $deleteid";
+
+    if(mysqli_query($conn, $sql)==TRUE){ 
+        header('location: view.php');
+    }
+}
+
 
 
 ?>
@@ -20,10 +30,11 @@ $conn = mysqli_connect('localhost','root','','testdb');
                 <div class="col-sm-1"></div>
             
             <div class="col-sm-10 pt-5 border border-success mt-3">
+                <h3 class="bg-success text-center">User's Information</h3>
                <?php
                    $sql =  "SELECT * FROM student";
                    $queary = mysqli_query($conn,$sql);
-                   echo"<table class='table table-success'>
+                   echo"<table class='table table-striped'>
                         <tr>
                             <th>Id</th>
                             <th>Firstname</th>
@@ -44,7 +55,10 @@ $conn = mysqli_connect('localhost','root','','testdb');
                             <td>$firstname</td>
                             <td>$lastname</td>
                             <td>$email</td>
-                            <td>Edit Delete</td>
+                            <td>
+                                <span class='btn btn-success'><a href='edit.php?id=$id' class='text-decoration-none text-white'>Edit</a></span> 
+                                <span class='btn btn-danger'><a href='view.php?deleteid=$id' class='text-decoration-none text-white'>Delete</a> </span>
+                            </td>
                         </tr>";
 
                   }
