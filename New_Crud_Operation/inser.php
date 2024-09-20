@@ -9,7 +9,7 @@ if(isset($_POST['submit'])){
 
     if(mysqli_query($conn,$sql )==TRUE){ 
         echo 'data inserted successfully';
-        header('location:insert.php');
+        header('location:view.php');
     }else{ 
         echo "data not inserted";
     }
@@ -34,7 +34,7 @@ if(isset($_POST['submit'])){
             
             <div class="col-sm-6 pt-5 border border-success mt-3">
                 <h3 class="bg-success">Registration Form</h3>
-                <form action="insert.php" method="POST">
+                <form action="view.php" method="POST">
                     Firstname : <br>
                     <input type="text" name="firstname"><br><br>
 

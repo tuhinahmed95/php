@@ -17,6 +17,21 @@ if(isset($_GET['id'])){
    }
 }
 
+if(isset($_POST['edit'])){ 
+    $editid = $_POST['edit'];
+    $firstname = $_POST['firstname'];
+    $lastname = $_POST['lastname'];
+    $email = $_POST['email'];
+
+    $sql1 = "UPDATE FROM student SET firstname='$firstname', lastname='$lastname', email='$email' WHERE id= $editid";
+
+    if(mysqli_query($conn, $sql1)==TRUE){ 
+        echo 'data update successfully';
+    }else { 
+        echo 'data not updated';
+    }
+}
+
 ?>
 
 
