@@ -23,10 +23,11 @@ if(isset($_POST['edit'])){
     $lastname = $_POST['lastname'];
     $email = $_POST['email'];
 
-    $sql1 = "UPDATE FROM student SET firstname='$firstname', lastname='$lastname', email='$email' WHERE id= $editid";
+    $sql1 = "UPDATE student SET firstname='$firstname', lastname='$lastname', email='$email' WHERE id= $editid";
 
     if(mysqli_query($conn, $sql1)==TRUE){ 
         echo 'data update successfully';
+        header('location:view.php');
     }else { 
         echo 'data not updated';
     }
@@ -50,7 +51,7 @@ if(isset($_POST['edit'])){
             
             <div class="col-sm-6 pt-5 border border-success mt-3">
                 <h3 class="bg-success">Update User's</h3>
-                <form action="view.php" method="POST">
+                <form action="" method="POST">
                     Firstname : <br>
                     <input type="text" name="firstname" value="<?php echo $firstname; ?>"><br><br>
 
